@@ -3,14 +3,15 @@
    ============================== */
 
 :root {
-  --primary: #4f72dc;        /* Azul principal */
-  --primary-soft: #EAF2FB;   /* Azul pastel suave */
+  --primary: #3b4a79;        /* Azul navbar */
+  --primary-soft: #b8cbed;   /* Azul muy suave (solo si luego lo usamos) */
 
-  --dark: #1F2937;           /* Texto principal */
-  --muted: #6B7280;          /* Texto secundario */
+  --dark: #1f2937;
+  --muted: #6b7280;
 
-  --white: #FFFFFF;
-  --light-gray: #F9FAFB;
+  --white: #ffffff;
+  --accent: #f59e6e;
+
 }
 
 /* ==============================
@@ -18,7 +19,7 @@
    ============================== */
 
 body {
-  padding-top: 72px; /* espacio para navbar fixed */
+  padding-top: 72px; /* navbar fixed */
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   color: var(--dark);
   background-color: var(--white);
@@ -26,6 +27,43 @@ body {
 
 .text-muted {
   color: var(--muted) !important;
+}
+
+/* ==============================
+   CONTENIDO CENTRADO
+   ============================== */
+
+section .container {
+  max-width: 960px;
+}
+
+/* ==============================
+   NAVBAR
+   ============================== */
+.navbar {
+  background-color: #242f56 !important;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.08) 1px,
+    transparent 1px
+  );
+  background-size: 4px 4px;
+}
+
+.navbar .nav-link {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  color: #dbe4ff;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
 }
 
 /* ==============================
@@ -46,7 +84,7 @@ body {
   height: 280px;
   object-fit: cover;
   border-radius: 20%;
-  border: 4px solid var(--primary-soft);
+  border: 4px solid #e5e7eb;
 }
 
 /* ==============================
@@ -57,44 +95,22 @@ section {
   scroll-margin-top: 80px;
 }
 
-/* ==============================
-   NAVBAR
-   ============================== */
-
-.navbar {
-  background-color: var(--white) !important;
+section h3 {
+    text-align: center;
+    font-weight: 600;
 }
 
-.nav-link {
-  font-weight: 500;
-  color: var(--dark);
+ #about p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
-.nav-link:hover {
-  color: var(--primary);
+#skills,
+#projects {
+  text-align: center;
 }
 
-/* ==============================
-   BOOTSTRAP OVERRIDES
-   ============================== */
-
-.btn-primary {
-  background-color: var(--primary);
-  border-color: var(--primary);
-}
-
-.btn-primary:hover {
-  background-color: #3e7fcf;
-  border-color: #3e7fcf;
-}
-
-.text-primary {
-  color: var(--primary) !important;
-}
-
-.bg-light {
-  background-color: var(--primary-soft) !important;
-}
 
 /* ==============================
    CARDS
@@ -110,3 +126,42 @@ section {
   transform: translateY(-6px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
 }
+
+#contact {
+  background-color: var(--primary);
+  color: #b8cbed;
+}
+
+#contact h3 {
+  color: #b8cbed;
+}
+
+#contact a {
+  color: #b8cbed;
+}
+
+#contact a:hover {
+  color: #b8cbed;
+}
+
+/* ==============================
+   BOTÓN CV (ACENTO)
+   ============================== */
+
+.btn-cv {
+  background-color: #f28348;
+  color: #ffffff;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  font-weight: 500;
+  border-radius: 999px; /* pill button */
+  transition: all 0.25s ease;
+}
+
+.btn-cv:hover {
+  background-color: #ea8b57;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(245, 158, 110, 0.35);
+  color: #ffffff;
+}
+
