@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marialis Aquino | Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="#">Marialis Aquino</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="assets/cv.pdf" target="_blank">CV</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER / PRESENTACIÓN -->
+  <header class="vh-75 d-flex align-items-center">
+    <div class="container text-center text-lg-start">
+      <h1 class="display-5 fw-bold">Marialis Aquino</h1>
+      <h2 class="h5 text-primary mb-3">Desarrolladora Full Stack en formación</h2>
+      <p class="text-muted col-lg-7 mx-auto mx-lg-0">
+        Estudiante de Desarrollo de Software con enfoque en tecnologías web modernas.
+      </p>
+
+      <div class="mt-4">
+        <a href="#projects" class="btn btn-primary me-2">Ver proyectos</a>
+        <a href="assets/cv.pdf" target="_blank" class="btn btn-outline-primary">Ver CV</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SOBRE MÍ -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h3 class="mb-4">Sobre mí</h3>
+      <p class="col-lg-8 text-muted">
+        Soy estudiante de Desarrollo de Software con una sólida base en tecnologías web y enfoque Full Stack.
+        Me encuentro en constante formación en Angular, Django, Python y MySQL.
+        Destaco por mi pensamiento lógico, adaptabilidad y trabajo en equipo bajo metodologías ágiles.
+        Mi experiencia en diseño gráfico y atención al cliente me permite desarrollar soluciones orientadas al usuario final.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="py-5 bg-light">
+    <div class="container">
+      <h3 class="mb-4">Skills</h3>
+
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h6 class="card-title">Frontend</h6>
+              <p class="text-muted mb-0">HTML, CSS, Bootstrap, Angular</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h6 class="card-title">Backend</h6>
+              <p class="text-muted mb-0">Python, Django, API REST</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h6 class="card-title">Herramientas</h6>
+              <p class="text-muted mb-0">Git, GitHub, MySQL, VS Code</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h6 class="card-title">Metodologías</h6>
+              <p class="text-muted mb-0">Scrum, Trello, Mural</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h3 class="mb-4">Proyectos</h3>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h6 class="card-title">ELPALOMAR</h6>
+              <p class="text-muted">Sistema web con frontend y backend integrados.</p>
+              <a href="#" class="btn btn-sm btn-outline-primary">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h6 class="card-title">Toolkit Bash</h6>
+              <p class="text-muted">Gestión y monitoreo de procesos en Linux.</p>
+              <a href="#" class="btn btn-sm btn-outline-primary">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h6 class="card-title">Portfolio</h6>
+              <p class="text-muted">Sitio personal profesional con Bootstrap.</p>
+              <a href="#" class="btn btn-sm btn-outline-primary">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container text-center">
+      <h3 class="mb-4">Contacto</h3>
+
+      <div class="d-flex justify-content-center gap-4 fs-3">
+        <a href="https://github.com/tuusuario" target="_blank" class="text-dark">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/tuusuario" target="_blank" class="text-dark">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="mailto:tuemail@email.com" class="text-dark">
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
