@@ -1,0 +1,45 @@
+/* ===== ESTILOS GENERALES ===== */
+body {
+  padding-top: 72px; /* espacio para navbar fixed */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #212529;
+}
+
+/* ===== HERO / HEADER ===== */
+.hero-section {
+  min-height: 70vh;
+  background-color: #ffffff;
+}
+
+/* ===== FOTO PERFIL ===== */
+.profile-img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* ===== SECCIONES ===== */
+section {
+  scroll-margin-top: 80px; /* para anclas con navbar fixed */
+}
+
+/* ===== LINKS NAVBAR ===== */
+.nav-link {
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #0d6efd;
+}
+
+/* ===== CARDS ===== */
+.card {
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
