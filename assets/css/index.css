@@ -22,19 +22,8 @@ body {
   padding-top: 72px;
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   color: var(--dark);
-
-  /* Fondo animado */
-  background: linear-gradient(
-    120deg,
-    #ffffff,
-    #f2f6fc,
-    #e9f0fb,
-    #f7f9fd
-  );
-  background-size: 300% 300%;
-  animation: backgroundMove 18s ease infinite;
+  background-color: var(--white);
 }
-
 
 .text-muted {
   color: var(--muted) !important;
