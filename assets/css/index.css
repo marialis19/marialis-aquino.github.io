@@ -19,11 +19,22 @@
    ============================== */
 
 body {
-  padding-top: 72px; /* navbar fixed */
+  padding-top: 72px;
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   color: var(--dark);
-  background-color: var(--white);
+
+  /* Fondo animado */
+  background: linear-gradient(
+    120deg,
+    #ffffff,
+    #f2f6fc,
+    #e9f0fb,
+    #f7f9fd
+  );
+  background-size: 300% 300%;
+  animation: backgroundMove 18s ease infinite;
 }
+
 
 .text-muted {
   color: var(--muted) !important;
@@ -72,7 +83,7 @@ section .container {
 
 .titulo-section {
   min-height: 75vh;
-  background-color: var(--white);
+  background: transparent;
 }
 
 /* ==============================
@@ -127,22 +138,72 @@ section h3 {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
 }
 
-#contact {
-  background-color: var(--primary);
-  color: #b8cbed;
+/* ==============================
+   PANEL CENTRAL (Skills / Proyectos)
+   ============================== */
+
+.panel-section {
+  background-color: #1d253e;
+  padding: 3rem 2rem;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(59, 74, 121, 0.08);
+}
+/* ==============================
+   TÍTULOS SOBRE PANEL OSCURO
+   ============================== */
+
+.panel-section h3 {
+  color: #e3ecfa;
+   letter-spacing: 0.8;
 }
 
-#contact h3 {
-  color: #b8cbed;
+/* ==============================
+   FOOTER / CONTACTO
+   ============================== */
+
+.footer-section {
+  background-color: #d7e6fa;;
+  padding: 2.5rem 1rem;
+  color: var(--primary);
 }
 
-#contact a {
-  color: #b8cbed;
+.footer-section h4 {
+  font-weight: 600;
+  color: var(--primary);
 }
 
-#contact a:hover {
-  color: #b8cbed;
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 4rem; /* separa cada bloque */
+  flex-wrap: wrap; /* adapta en pantallas pequeñas */
 }
+
+.footer-item a {
+  display: flex;
+  flex-direction: column; /* icono arriba, texto debajo */
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.95rem;
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-item a:hover {
+  color: #242f56;
+  transform: translateY(-2px);
+}
+
+.footer-item i {
+  font-size: 2rem;
+}
+
+.footer-text {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
 
 /* ==============================
    BOTÓN CV (ACENTO)
@@ -164,4 +225,36 @@ section h3 {
   box-shadow: 0 8px 16px rgba(245, 158, 110, 0.35);
   color: #ffffff;
 }
+
+.about-panel {
+  background-color: #d7e6fa; /* mismo tono que footer */
+  padding: 1.8rem 2.5rem;
+  border-radius: 24px;
+  max-width: 520px;
+  box-shadow: 0 20px 40px rgba(59, 74, 121, 0.08);
+  margin-top: 20rem; /* 👈 ESTE es el ajuste clave */
+}
+
+.about-panel h3 {
+  color: #1d253e;
+  margin-bottom: 1.5rem;
+}
+
+.about-panel p {
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  line-height: 1.55;
+  margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+  .about-panel {
+    margin-top: 2rem;      /* menos bajada */
+    margin-left: auto;     /* centra horizontal */
+    margin-right: auto;
+    text-align: center;    /* opcional pero queda mejor */
+  }
+}
+
 

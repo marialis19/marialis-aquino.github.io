@@ -11,6 +11,8 @@
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
   <!-- CSS propio -->
   <link rel="stylesheet" href="assets/css/index.css">
 </head>
@@ -29,7 +31,7 @@
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
           <li class="nav-item">
-            <a class="nav-link" href="assets/cv.pdf" target="_blank">CV</a>
+            <a class="nav-link" href="assets/cv-marialis.pdf" target="_blank">CV</a>
           </li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
         </ul>
@@ -37,149 +39,200 @@
     </div>
   </nav>
 
-  <!-- HEADER / PRESENTACIÓN -->
-<header class="titulo-section d-flex align-items-center">
-  <div class="container text-center">
+  <!-- HERO + SOBRE MÍ -->
+<section class="titulo-section d-flex align-items-center">
+  <div class="container">
+    <div class="row align-items-center">
 
-    <!-- FOTO -->
-    <img
-      src="assets/images/cv-2.jpg"
-      alt="Foto de Marialis Aquino"
-      class="perfil-img mb-4 shadow"
-    >
+      <!-- COLUMNA IZQUIERDA: HEADER -->
+      <div class="col-lg-5 text-center text-lg-start mb-5 mb-lg-0">
 
-    <!-- TEXTO -->
-    <h1 class="display-5 fw-bold">Marialis Aquino</h1>
-    <h2 class="h5 text-primary mb-3">Desarrolladora Full Stack en formación</h2>
+        <img
+          src="assets/images/cv-2.jpg"
+          alt="Foto de Marialis Aquino"
+          class="perfil-img mb-4 shadow"
+        >
 
-    <p class="text-muted col-lg-7 mx-auto">
-      Estudiante de Desarrollo de Software con enfoque en tecnologías web modernas.
+        <h1 class="display-5 fw-bold">Marialis Aquino</h1>
+        <h2 class="h5 text-primary mb-3">Desarrolladora Full Stack en formación</h2>
+
+        <p class="text-muted">
+          Estudiante de Desarrollo de Software con enfoque en tecnologías web modernas.
+        </p>
+
+        <a href="assets/cv-marialis.pdf" target="_blank" class="btn btn-cv mt-3">
+          Ver CV
+        </a>
+
+      </div>
+
+      <!-- COLUMNA DERECHA: SOBRE MÍ -->
+<div class="col-lg-7 d-flex justify-content-end">
+
+  <div class="about-panel">
+    <h3 class="mb-3">Sobre mí</h3>
+
+    <p>
+      Soy estudiante de Desarrollo de Software con una sólida base en tecnologías web y enfoque Full Stack.
+      Me encuentro en constante formación en Angular, TypeScript, Django, Python y MySQL.
     </p>
 
-    <!-- BOTONES -->
-    <div class="mt-4">
-        <a href="assets/cv-marialis.pdf" target="_blank" class="btn btn-cv">Ver CV</a>
-    </div>
-
+    <p>
+      Destaco por mi pensamiento lógico, adaptabilidad y trabajo en equipo bajo metodologías ágiles.
+      Mi experiencia en diseño gráfico y atención al cliente me permite desarrollar soluciones
+      orientadas al usuario final.
+    </p>
   </div>
-</header>
+
+</div>
+
+</section>
 
 
-  <!-- SOBRE MÍ -->
-  <section id="about" class="py-5">
-    <div class="container">
-      <h3 class="mb-4">Sobre mí</h3>
-      <p class="col-lg-8 text-muted">
-        Soy estudiante de Desarrollo de Software con una sólida base en tecnologías web y enfoque Full Stack.
-        Me encuentro en constante formación en Angular, TypeScript, Django, Python y MySQL.
-        Destaco por mi pensamiento lógico, adaptabilidad y trabajo en equipo bajo metodologías ágiles.
-        Mi experiencia en diseño gráfico y atención al cliente me permite desarrollar soluciones orientadas al usuario final.
-      </p>
-    </div>
-  </section>
+ <!-- SKILLS -->
+<section id="skills" class="py-5">
+  <div class="container">
+    <div class="panel-section text-center">
 
-  <!-- SKILLS -->
-  <section id="skills" class="py-5 bg-light">
-    <div class="container">
-      <h3 class="mb-4">Skills</h3>
+      <h3 class="mb-5">Skills</h3>
 
-      <div class="row g-4">
+      <div class="row g-4 justify-content-center">
+
+        <!-- Frontend -->
         <div class="col-md-3">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h6 class="card-title">Frontend</h6>
-              <p class="text-muted mb-0">HTML, CSS, Bootstrap, Angular</p>
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <i class="devicon-html5-plain colored fs-1 mb-3"></i>
+              <h6 class="card-title fw-semibold">Frontend</h6>
+              <p class="text-muted mb-0">
+                HTML, CSS, Bootstrap, Angular, TypeScript
+              </p>
             </div>
           </div>
         </div>
 
+        <!-- Backend -->
         <div class="col-md-3">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h6 class="card-title">Backend</h6>
-              <p class="text-muted mb-0">Python, Django, API REST</p>
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <i class="devicon-nodejs-plain colored fs-1 mb-3"></i>
+              <h6 class="card-title fw-semibold">Backend</h6>
+              <p class="text-muted mb-0">
+                Python, MySQL, Django, API REST
+              </p>
             </div>
           </div>
         </div>
 
+        <!-- Herramientas -->
         <div class="col-md-3">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h6 class="card-title">Herramientas</h6>
-              <p class="text-muted mb-0">Git, GitHub, MySQL, VS Code</p>
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <i class="devicon-git-plain colored fs-1 mb-3"></i>
+              <h6 class="card-title fw-semibold">Herramientas</h6>
+              <p class="text-muted mb-0">
+                Git, GitHub, VS Code, Draw.io
+              </p>
             </div>
           </div>
         </div>
 
+        <!-- Metodologías -->
         <div class="col-md-3">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h6 class="card-title">Metodologías</h6>
-              <p class="text-muted mb-0">Scrum, Trello, Mural</p>
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <i class="devicon-trello-plain colored fs-1 mb-3"></i>
+              <h6 class="card-title fw-semibold">Metodologías</h6>
+              <p class="text-muted mb-0">
+                Scrum, Trello, Mural
+              </p>
             </div>
           </div>
         </div>
+
       </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- PROYECTOS -->
-  <section id="projects" class="py-5">
-    <div class="container">
-      <h3 class="mb-4">Proyectos</h3>
+<section id="projects" class="py-5">
+  <div class="container">
+    <div class="panel-section text-center">
 
-      <div class="row g-4">
+      <h3 class="mb-5">Proyectos</h3>
+
+      <div class="row g-4 justify-content-center">
+
+        <!-- Proyecto 1 -->
         <div class="col-md-4">
           <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h6 class="card-title">ELPALOMAR</h6>
-              <p class="text-muted">Sistema web con frontend y backend integrados.</p>
-              <a href="#" class="btn btn-sm btn-outline-primary">GitHub</a>
+            <div class="card-body text-center">
+              <h6 class="card-title fw-semibold">ELPALOMAR</h6>
+              <p class="text-muted mb-3">Sistema integral de gestión de club deportivo.</p>
+              <a href="https://github.com/El-palomar/ElPalomar" target="_blank" class="btn btn-cv">GitHub</a>
             </div>
           </div>
         </div>
 
+         <!-- Proyecto 2 -->
         <div class="col-md-4">
           <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h6 class="card-title">Toolkit Bash</h6>
-              <p class="text-muted">Gestión y monitoreo de procesos en Linux.</p>
-              <a href="#" class="btn btn-sm btn-outline-primary">GitHub</a>
+            <div class="card-body text-center">
+              <h6 class="card-title fw-semibold">Cabañas Glamping</h6>
+              <p class="text-muted mb-3">Página web de cabañas en las sierras cordobesas.</p>
+              <a href="https://lacuestaglamping.com/web/views/actividades.html" target="_blank" class="btn btn-cv">Glamping</a>
             </div>
           </div>
         </div>
 
+        <!-- Proyecto 3 -->
         <div class="col-md-4">
           <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h6 class="card-title">Portfolio</h6>
-              <p class="text-muted">Sitio personal profesional con Bootstrap.</p>
-              <a href="#" class="btn btn-sm btn-outline-primary">GitHub</a>
+            <div class="card-body text-center">
+              <h6 class="card-title fw-semibold">ARGBroker Demo</h6>
+              <p class="text-muted mb-3">Aplicación para transacciones entre inversores.</p>
+              <a href="https://github.com/Grupo-Seven-ISPC/ARGBroker-Demo-Grupo-Seven" target="_blank" class="btn btn-cv">GitHub</a>
             </div>
           </div>
         </div>
-      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- CONTACTO -->
-  <section id="contact" class="py-5 bg-light">
-    <div class="container text-center">
-      <h3 class="mb-4">Contacto</h3>
+<!-- CONTACTO / FOOTER -->
+<footer id="contact" class="footer-section">
+  <div class="container text-center">
 
-      <div class="d-flex justify-content-center gap-4 fs-3">
-        <a href="https://github.com/marialis19" target="_blank" class="text-dark">
-          <i class="bi bi-github"></i>
-        </a>
-        <a href="https://linkedin.com/in/marialis-aquino-006a07149" target="_blank" class="text-dark">
-          <i class="bi bi-linkedin"></i>
-        </a>
-        <a href="mailto:marialis1903@gmail.com" class="text-dark">
-          <i class="bi bi-envelope"></i>
+    <h3 class="mb-4">Contacto</h3>
+
+    <div class="footer-links d-flex justify-content-center gap-5">
+
+      <div class="footer-item">
+        <a href="mailto:marialis1903@gmail.com">
+          <i class="bi bi-envelope fs-2"></i>
+          <span>marialis1903@gmail.com</span>
         </a>
       </div>
+
+      <div class="footer-item">
+        <a href="https://linkedin.com/in/marialis-aquino-006a07149" target="_blank">
+          <i class="bi bi-linkedin fs-2"></i>
+          <span>linkedin.com/in/marialis-aquino</span>
+        </a>
+      </div>
+
+      <div class="footer-item">
+        <a href="https://github.com/marialis19" target="_blank">
+          <i class="bi bi-github fs-2"></i>
+          <span>github.com/marialis19</span>
+        </a>
+      </div>
+
     </div>
-  </section>
+</footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
