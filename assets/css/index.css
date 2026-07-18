@@ -1,10 +1,6 @@
-/* ==============================
-   PALETA DE COLORES - GLOBAL
-   ============================== */
-
 :root {
-  --primary: #3b4a79;        /* Azul navbar */
-  --primary-soft: #b8cbed;   /* Azul muy suave (solo si luego lo usamos) */
+  --primary: #3b4a79;        
+  --primary-soft: #b8cbed;   
 
   --dark: #1f2937;
   --muted: #6b7280;
@@ -13,10 +9,6 @@
   --accent: #f59e6e;
 
 }
-
-/* ==============================
-   ESTILOS GENERALES
-   ============================== */
 
 body {
   padding-top: 72px;
@@ -29,17 +21,10 @@ body {
   color: var(--muted) !important;
 }
 
-/* ==============================
-   CONTENIDO CENTRADO
-   ============================== */
-
 section .container {
   max-width: 960px;
 }
 
-/* ==============================
-   NAVBAR
-   ============================== */
 .navbar {
   background-color: #242f56 !important;
   background-image: radial-gradient(
@@ -66,18 +51,10 @@ section .container {
   filter: invert(1);
 }
 
-/* ==============================
-   HERO / HEADER
-   ============================== */
-
 .titulo-section {
   min-height: 75vh;
   background: transparent;
 }
-
-/* ==============================
-   FOTO PERFIL
-   ============================== */
 
 .perfil-img {
   width: 250px;
@@ -86,10 +63,6 @@ section .container {
   border-radius: 20%;
   border: 4px solid #e5e7eb;
 }
-
-/* ==============================
-   SECCIONES
-   ============================== */
 
 section {
   scroll-margin-top: 80px;
@@ -111,11 +84,6 @@ section h3 {
   text-align: center;
 }
 
-
-/* ==============================
-   CARDS
-   ============================== */
-
 .card {
   border: none;
   border-radius: 16px;
@@ -127,28 +95,17 @@ section h3 {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
 }
 
-/* ==============================
-   PANEL CENTRAL (Skills / Proyectos)
-   ============================== */
-
 .panel-section {
   background-color: #1d253e;
   padding: 3rem 2rem;
   border-radius: 24px;
   box-shadow: 0 20px 40px rgba(59, 74, 121, 0.08);
 }
-/* ==============================
-   TÍTULOS SOBRE PANEL OSCURO
-   ============================== */
 
 .panel-section h3 {
   color: #e3ecfa;
    letter-spacing: 0.8;
 }
-
-/* ==============================
-   FOOTER / CONTACTO
-   ============================== */
 
 .footer-section {
   background-color: #d7e6fa;;
@@ -164,13 +121,13 @@ section h3 {
 .footer-links {
   display: flex;
   justify-content: center;
-  gap: 4rem; /* separa cada bloque */
+  gap: 4rem;
   flex-wrap: wrap; /* adapta en pantallas pequeñas */
 }
 
 .footer-item a {
   display: flex;
-  flex-direction: column; /* icono arriba, texto debajo */
+  flex-direction: column;
   align-items: center;
   gap: 0.3rem;
   font-size: 0.95rem;
@@ -193,11 +150,6 @@ section h3 {
   color: var(--muted);
 }
 
-
-/* ==============================
-   BOTÓN CV (ACENTO)
-   ============================== */
-
 .btn-cv {
   background-color: #f28348;
   color: #ffffff;
@@ -216,12 +168,12 @@ section h3 {
 }
 
 .about-panel {
-  background-color: #d7e6fa; /* mismo tono que footer */
+  background-color: #d7e6fa; 
   padding: 1.8rem 2.5rem;
   border-radius: 24px;
   max-width: 520px;
   box-shadow: 0 20px 40px rgba(59, 74, 121, 0.08);
-  margin-top: 20rem; /* 👈 ESTE es el ajuste clave */
+  margin-top: 20rem;
 }
 
 .about-panel h3 {
@@ -239,10 +191,9 @@ section h3 {
 
 @media (max-width: 991px) {
   .about-panel {
-    margin-top: 2rem;      /* menos bajada */
-    margin-left: auto;     /* centra horizontal */
+    margin-left: auto;     
     margin-right: auto;
-    text-align: center;    /* opcional pero queda mejor */
+    text-align: center;    
   }
 }
 
