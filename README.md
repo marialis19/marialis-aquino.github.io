@@ -2,7 +2,7 @@
 
 Portfolio personal donde muestro mi perfil profesional, skills y proyectos como Desarrolladora Full Stack Junior.
 
-🔗 **Ver sitio en vivo:** [marialis-aquino.github.io](https://marialis-aquino.github.io)
+🔗 **Ver sitio en vivo:** [marialis-aquino.github.io](https://marialis19.github.io/marialis-aquino.github.io/)
 
 ## Sobre este proyecto
 
